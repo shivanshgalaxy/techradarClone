@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 100px;
+    background-color: #090E21; /*060027*/
+    color: #eeeeee;
+    text-align: left;
+    /* margin-right: 10px; */
+    display: flex;
+    justify-content: space-between; /* Space between logo and right side divs */
+    align-items: center; /* Align items vertically */
+    padding: 10px; /* Adjust padding as needed */
+
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.logo-image img {
+    width: 200px;
+    height: auto;
+    padding-right: 10px;
+}
+
+.tagline {
+    display: inline-block;
+    vertical-align: bottom;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header-right {
+    padding-right: 30px;
+    color: #fff;
+    display: flex;
+    gap: 10px; /* Adjust gap between items as needed */
+}
+
+.header-right div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 4px; /* Optional: to add rounded corners */
+    padding-right: 4px;
+}
+
+/* Add specific styles for each section if needed */
+
+.search img{
+    width: 20px;
+    height: auto;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+
+}
+
+.rss {
+    margin-right: 40px;
+}
+
+.rss .underline{
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px dotted #eeeeee;
+    font-size: 14px;
+}
+
+.region {
+    padding-right: 5px;
+    font-family: sans-serif;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between text, flag, and chevron */
+}
+
+.region .flag {
+    width: 20px; 
+    height: auto;
+}
+
+.circle-image{
+    width: 26px; 
+    height: 26px;
+    border-radius: 50%; /* Makes the image a circle */
+    object-fit: scale-down; /* Ensures the image covers the entire circle */
+    border: 1px solid #ffffff; /* Adds a white border around the image */
+}
+
+.circle-image#twitter {
+    padding: 5px;
+}
+
+#youtube {
+    width: 26px; /* Adjust the width of the YouTube icon */
+    height: 26px; /* Adjust the height of the YouTube icon */
+    padding: 4px; /* Add padding around the YouTube icon */
+}
+
+#flipboard {
+    padding: 4px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    border-bottom: 4px solid #ccc; /* Grey border at the bottom */
+    text-align: center;
+}
+
+.navigation {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin-top: 10px; /* Adjust margin as needed to create space below header */
+    position: relative;
+}
+
+.navigation li {
+    color:  #333333;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block; /* Display items horizontally */
+    margin-right: 30px; /* Adjust spacing between items */
+    font-size: 18px; /* Adjust font size as needed */
+    font-weight: bold; /* Apply bold font weight */
+}
+
+.navigation a {
+    color: #333333; /* Set the color of the links to black */
+    text-decoration: none; /* Remove underline from links */
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a:hover {
+    color: #2f6e91;
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+.menu-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 260px;
+}
+
+.dropdown {
+    position: relative;
+}
+/* Hide the dropdown content by default */
+.dropdown-content {
+    display: none;
+    position: absolute; /* Position it absolutely for proper alignment */
+    background-color: #fff; /* Background color for the dropdown */
+    min-width: 160px; /* Minimum width for the dropdown */
+    z-index: 1; /* Ensure it appears above other elements */
+    padding: 0;
+    top: 119%;
+    left: -30px;
+}
+
+/* Style for each dropdown item */
+.dropdown-content li {
+    color: #333; /* Text color */
+    padding: 12px 12px; /* Padding for better spacing */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Make each item block-level */
+    margin: 0;
+    text-align: left;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.image-container {
+    display: flex;
+    /*gap: 10px;*/
+    padding: 0;
+
+}
+
+.menu-image {
+    height: 44px;
+    width: auto;
+}
+
+.trending {
+    width: 1200px;
+    height: 103px;
+    background-color: #090e21;
+}
