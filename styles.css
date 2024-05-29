@@ -283,7 +283,10 @@
     color: #ffffff;
     background-color: #090e21;
     width: 1200px;
+    height: 2000px;
     padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .column-left {
@@ -291,7 +294,7 @@
     margin-bottom: 30px;
 }
 
-.gradient-header {
+.gradient-header-left {
     border-top: 4px solid transparent; /* Set the border width and make it transparent */
     border-image: linear-gradient(to left, #3d73d1, #e6248a); /* Apply linear gradient */
     border-image-slice: 1; /* Ensure the entire border is covered by the gradient */
@@ -301,5 +304,156 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 42px;
     font-weight: 200;
-    padding-top: 25px;
+    padding: 20px 0;
+}
+
+.story-top {
+    position: relative;
+}
+
+.top-image {
+    width: 694px;
+    height: auto;
+}
+
+.stories-top-wrapper {
+    width: 694px;
+    position: relative;
+    margin-top: -55px;
+    z-index: 1;
+    background-color: #eeeeee;
+
+}
+
+.stories-top-rounded {
+    width: 100%; /* Matches the width of the parent */
+    height: 188px; /* Adjust the height as needed */
+    background-color: #ffffff; /* White background */
+    position: absolute;
+    top: 0; /* Adjust as needed to align with the image */
+    border-radius: 0 50px 0 0;
+    padding: 40px 40px 20px;
+    margin-bottom: 100px;
+    bottom: -60px;
+}
+
+.stories-top-headline {
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 14px;
+}
+
+.stories-top-tagline {
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.story-top:hover .stories-top-headline {
+    text-decoration: underline;
+    text-decoration-color: #E40784;
+}
+
+.story-top:hover .stories-top-tagline {
+    text-decoration: underline;
+    text-decoration-color: #2F6E91;
+}
+
+.list-flex-container {
+    background-color: #fff;
+    position: relative;
+    width: 694px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 188px;
+    padding: 0px 40px 20px;
+}
+
+.list-flex-item {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.list-flex-item:hover {
+    text-decoration: underline;
+    text-decoration-color: #E40784;
+}
+
+.list-flex-item a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+    display: block; /* Make the link a block element */
+    text-align: left; /* Align text to the left */
+}
+
+.list-flex-item h2 {
+    font-family: Arial, sans-serif;
+    font-size: 20px; /* Adjust font size */
+    margin-bottom: 10px; /* Space between text and image */
+    color: #1b1b1b; /* Set text color */
+}
+
+.list-flex-item img{
+    max-width: 100%;
+    margin-bottom: 13px;
+    width: 100%; /* Ensure the image takes the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.list-flex-item h2 {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.column-right {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-items: left;
+}
+
+.gradient-header-right {
+    border-top: 4px solid transparent; /* Set the border width and make it transparent */
+    border-image: linear-gradient(to right, #3d73d1, #e6248a); /* Apply linear gradient */
+    border-image-slice: 1; /* Ensure the entire border is covered by the gradient */
+    width: 326px;
+}
+
+.news-top {
+    padding-bottom: 30px;
+}
+
+.news-top-header {
+    font-family: Arial, sans-serif;
+    font-size: 42px;
+    font-weight: 200;
+    padding: 25px 0;
+}
+
+.news-top a {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.news-list-wrapper {
+
+}
+
+.news-list {
+    list-style: none;
+}
+
+.news-list-item {
+
+ }
+
+.news-list-item-div {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
 }
