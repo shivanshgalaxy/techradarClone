@@ -211,7 +211,7 @@
 }
 
 .trending-wrapper {
-    width: 1200px; /* Adjust width as needed */
+    width: 75rem; /* Adjust width as needed */
     height: 103px;
     padding: 40px 24px 20px 24px;;
     background-color: #090e21;
@@ -282,10 +282,11 @@
 .area-top-wrapper {
     color: #ffffff;
     background-color: #090e21;
-    width: 1200px;
+    width: 75rem;
     padding: 0 60px;
     display: flex;
     justify-content: space-between;
+    gap: 60px;
 }
 
 .column-left {
@@ -311,7 +312,7 @@
 }
 
 .top-image {
-    width: 694px;
+    width: 100%;
     height: auto;
 }
 
